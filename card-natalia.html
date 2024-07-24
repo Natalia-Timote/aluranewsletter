@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaria: '#f2dae7'
+                    },
+                    fontFamily: {
+                        titulo: ['Vast Shadow', 'serif']
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="">
+    <div class="flex px-6 justify-center items-center m-auto">
+        <img class="h-44 shadow-2xl" src="image/front-end.png" alt="Imagem de um computador programando e um copo de café.">
+
+        <div class="bg-gradient-to-r from-pink-300 to-slate-400 h-44 p-10 my-10 flex flex-col my-6 gap-2 w-2/5 justify-center shadow-2xl rounded-r-xl">
+            <p class="text-6xl font-black text-primaria font-titulo">Natalia Timote</p>
+            <p class="text-4xl">Front-end</p>
+            <ul class="flex gap-3 mb-4">
+                <li class="hover:font-bold hover:font-titulo"><a href="#">LinkedIn</a></li>
+                <li class="hover:font-bold hover:font-titulo"><a href="#">Email</a></li>
+                <li class="hover:font-bold hover:font-titulo"><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
